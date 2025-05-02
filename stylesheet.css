@@ -45,14 +45,14 @@
     margin-bottom: 2vh;
     font-weight: bolder;
     font-size: xx-large;
-    color: #5e3a82; 
-    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+    color: #e6bef9; 
+    text-shadow: -1px 0 #29003c, 0 1px #29003c, 1px 0 #29003c, 0 -1px #29003c;
   }
   
   #introSquare h2{
     font-size: 3rem;
-    color: #5e3a82; 
-    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+    color: #e6bef9; 
+    text-shadow: -1px 0 #29003c, 0 1px #29003c, 1px 0 #29003c, 0 -1px #29003c;
   }
 
  li:hover{
@@ -179,7 +179,7 @@
     font-size: 1.5rem;
     font-weight: bolder;
     color: #8c00ff;
-    text-shadow: 2px 2px 5px rgb(81, 0, 147);
+    text-shadow: -1px 0 #29003c, 0 1px #29003c, 1px 0 #29003c, 0 -1px #29003c;
     text-align: center;
     font-family: "Share Tech Mono", monospace;
 }
