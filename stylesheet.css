@@ -1,0 +1,337 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Share Tech Mono", monospace;
+  }
+  
+  body {
+    height: 100%;
+  }
+  
+  #containerIntro {
+    width: 100%;
+    min-height: 100vh;
+    padding: 5vh 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right bottom, #440075 50%, #52008c 50%);
+  }
+  
+  .centerWrapper {
+    width: 70%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #introSquare {
+    width: 100%;
+    padding: 4vh 5vh;
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+
+    border-radius: 3vh;
+    border: solid 2px #a378d3;
+    background-color: rgba(180, 139, 224, 0.3);
+    box-shadow: 0 4px 8px 0 #00000033, 0 6px 20px 0 #00000030;
+  }
+  
+  #introSquare p, ul {
+    line-height: 1.4;
+    margin-bottom: 2vh;
+    font-weight: bolder;
+    font-size: xx-large;
+    color: #5e3a82; 
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+  }
+  
+  #introSquare h2{
+    font-size: 3rem;
+    color: #5e3a82; 
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+  }
+
+ li:hover{
+    color: rgb(211, 154, 255);
+    text-shadow: 1px 1px 3px black, 0 0 5px #8c00ff, 0 0 5px #280049;
+  }
+  .bottomRow {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  
+  .bottomRow ul {
+    display: flex;
+    flex-direction: row;
+    gap: 10vh;
+    padding-left: 2vh;
+    list-style-type: disc;
+  }
+  
+  .bottomRow li::marker {
+    color: white;
+  }
+
+  @media (max-width: 600px) {
+    .bottomRow ul {
+      flex-direction: column;
+      align-items: left;
+      text-align: center;
+      font-size: large;
+      line-height: 1.4;
+      gap: 2vh;
+    }
+  
+    #introSquare {
+      padding: 3vh 2vh;
+    }
+
+    #introSquare h2{
+        font-size: 2rem;
+    }
+
+    #introSquare p {
+      font-size: medium;
+    }
+  }
+
+  .transitionGradient {
+    width: 100%;
+    height: 10vh;
+    background: linear-gradient(to bottom, #52008c, #11021b);
+  }
+
+  #memoryWrap {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    padding: 10vh 5vh;
+    background-color: #11021b;
+    overflow: hidden;
+  }
+  
+  .gifBackground {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background-image: url('confetti.gif');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+    z-index: 0;
+  }
+  
+  #title {
+    position: relative;
+    z-index: 1;
+    font-size: 2.5rem;
+    font-family: 'Orbitron', monospace;
+    letter-spacing: 0.15rem;
+    padding-bottom: 2vh;
+
+    color: #8c00ff;
+    text-shadow: 2px 2px 5px rgb(81, 0, 147);
+  }
+  
+  #imageWrap {
+    position: relative;
+    z-index: 1;
+    padding: 5vh 2vh;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+  }
+  
+  .imageRow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10vh;
+    padding: 2vh 0;
+  }
+  
+  .imageRow figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+  }
+
+  .imageRow img {
+    width: 100%;
+    height: auto;
+    border-radius: 3vh;
+    border: 2px solid #8c00ff;
+    
+  }
+  
+  .imageRow figcaption {
+    margin-top: 1vh;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: #8c00ff;
+    text-shadow: 2px 2px 5px rgb(81, 0, 147);
+    text-align: center;
+    font-family: "Share Tech Mono", monospace;
+}
+  
+@media (max-width: 600px) {
+    #title{
+        font-size: x-large;
+    }
+
+    #memoryWrap {
+      padding: 4vh 2vh;
+      padding-bottom: 10vh;
+    }
+  
+    #imageWrap {
+      padding: 0vh 1vh;
+      gap: 2vh;
+    }
+  
+    .imageRow {
+      gap: 7vh;
+    }
+  
+    .imageRow img {
+      height: 20vh;
+      width: 25vw;
+    }
+    
+    .imageRow figcaption {
+        font-size: small;
+    }
+}
+
+.transitionGradientReverse {
+    width: 100%;
+    height: 10vh;
+    background: linear-gradient(to bottom, #11021b, #d0b1e4 );
+  }
+
+#lettertitle{
+    position: relative;
+    z-index: 1;
+    background-color: #1e0a2c ;
+    border: 0.4rem dashed #4a0086; 
+    text-align: center;
+}
+
+#lettertitle h2, h5{
+    font-family: 'Orbitron', monospace;
+    font-size: 2rem;
+    letter-spacing: 0.15rem;
+    padding: 2vh 4vh;
+
+    color: #e2b4ff;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #8c00ff;
+}
+
+#letterWrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    padding-bottom: 10vh;
+    height: fit-content;
+    background-image: url('notebook.jpg');
+    background-size: cover;
+    background-position: center;
+    
+  }
+  
+  #letterWrap::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(59, 0, 108, 0.6);
+  }
+  
+  #letterBorder {
+    position: relative;
+    margin-top: 5vh;
+    padding: 2vh;
+    width: 70%;
+  
+    background-color: rgba(253, 253, 221, 0.5);
+    border-radius: 2vh;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+#letterBorder p{
+    line-height: 3.6rem;
+    letter-spacing: 0.15rem;
+    font-size: 1.7rem;
+    font-weight: bold;
+    font-family: "Caveat", cursive;
+  
+    color: #11091d;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: #6b3089 ;
+}
+
+#madewith{
+    height: 15vh;
+    width: 100%;
+    background-color: rgb(73, 36, 100);
+
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+#madewith p{
+    padding: 4vh;
+    font-size: x-large;
+    font-family: "Share Tech Mono", monospace;
+    color: rgb(211, 154, 255);
+    text-shadow: 1px 1px 3px black, 0 0 5px #8c00ff, 0 0 5px #280049;
+}
+
+@media (max-width: 600px) {
+
+    #letterWrap{
+        padding-bottom: 5vh;
+    }
+    #letterBorder{
+        width: 90%;
+        margin: 2vh 2vh;
+    }
+
+    #lettertitle{
+        justify-content: center;
+        text-align: center;
+        font-size: large;
+    }
+
+    #letterBorder p{
+        font-size: large;
+        line-height: 2.2rem;
+        letter-spacing: 0.05rem;
+    }
+
+
+    #madewith{
+        height: 10vh;
+    }
+
+    #madewith p{
+        padding-top: 2vh;
+        font-size: medium;
+    }
+  }
