@@ -39,7 +39,10 @@
             <div class="gifBackground"></div>
     
             <header id="title">
-                <p>Some moments throughout the years</p>
+                <div id="friendshipTimer">
+                    <div id="timeElapsed"></div>
+                    <div id="sinceText">since we became friends on August 23rd, 2021</div>
+                </div>
             </header>
     
             <section id="imageWrap">
@@ -114,6 +117,36 @@
                 2025
             </p>
         </footer>
+
+
+        <script>
+            const startDate = new Date("August 23, 2021");
+        
+            function updateTimer() {
+                const now = new Date();
+        
+                let years = now.getFullYear() - startDate.getFullYear();
+                let months = now.getMonth() - startDate.getMonth();
+                let days = now.getDate() - startDate.getDate();
+        
+                if (days < 0) {
+                    months--;
+                    const prevMonth = new Date(now.getFullYear(), now.getMonth(), 0);
+                    days += prevMonth.getDate();
+                }
+        
+                if (months < 0) {
+                    years--;
+                    months += 12;
+                }
+        
+                document.getElementById("timeElapsed").textContent = 
+                    `Together for ${years} years - ${months} months - ${days} days`;
+            }
+        
+            updateTimer();
+        </script>
+        
     </body>
     
 </html>
