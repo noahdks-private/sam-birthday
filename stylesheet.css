@@ -236,6 +236,7 @@
     
   }
   
+  
 @media (max-width: 600px) {
 
   #title{
@@ -261,7 +262,7 @@
     }
   
     .imageRow {
-      gap: 7vh;
+      gap: 8vh;
     }
   
     .imageRow img {
@@ -269,11 +270,17 @@
       width: 25vw;
     }
     
-    .imageRow figcaption {
-        font-size: small;
+    .imageRowLast img{
+      width: 60vw;
     }
-}
 
+    .imageRow figcaption, .imageRowLast figcaption {
+        font-size: small;
+        letter-spacing: 0.1vh;
+    }
+
+    
+}
 
 .transitionGradientReverse {
     width: 100%;
